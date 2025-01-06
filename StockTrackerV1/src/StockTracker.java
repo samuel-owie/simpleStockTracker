@@ -14,4 +14,17 @@ public class StockTracker {
     }
 
     //Remove a stock by symbol
+    public void removeStock(String symbol){
+        stocks.removeIf(stock -> stock.getSymbol().equalsIgnoreCase(symbol));
+    }
+
+    //Update stock price by symbol
+    public void updateStockPrice(String symbol, double newPrice){
+        for(Stock stock : stocks){
+            if(stock.getSymbol().equalsIgnoreCase(symbol)){
+                stock.setPrice(newPrice);
+                return;
+            }
+        }
+    }
 }
