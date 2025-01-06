@@ -10,5 +10,7 @@ public class Main {
         tracker.addStock(new Stock("TSLA", "Tesla Inc.", 700.00, 20));
 
         //Display all stocks
+        System.out.println("Stocks in tracker:");
+        tracker.displayStocks();
     }
 }
