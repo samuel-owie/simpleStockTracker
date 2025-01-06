@@ -36,4 +36,17 @@ public class Stock {
     public void setQuantity(int quantity){
         this.quantity = quantity;
     }
+
+    //Methods
+
+    //Calculate stock's total value
+    public double getValue(){
+        return price * quantity;
+    }
+
+    //String representation
+    @Override
+    public String toString(){
+        return name + " (" + symbol + ") - Price: $" + String.format("%.2f", price) + ", Quantity: " + quantity + ", Value: $" + String.format("%.2f", getPrice());
+    }
 }
