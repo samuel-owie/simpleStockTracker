@@ -47,6 +47,6 @@ public class Stock {
     //String representation
     @Override
     public String toString(){
-        return name + " (" + symbol + ") - Price: $" + String.format("%.2f", price) + ", Quantity: " + quantity + ", Value: $" + String.format("%.2f", getPrice());
+        return name + " (" + symbol + ") - Price: $" + String.format("%.2f", price) + ", Quantity: " + quantity + ", Value: $" + String.format("%.2f", getValue());
     }
 }
