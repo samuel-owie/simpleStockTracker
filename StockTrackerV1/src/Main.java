@@ -12,5 +12,10 @@ public class Main {
         //Display all stocks
         System.out.println("Stocks in tracker:");
         tracker.displayStocks();
+
+        //update stock price
+        tracker.updateStockPrice("AAPL", 155.00);
+        System.out.println("\nAfter updating AAPL price: ");
+        tracker.displayStocks();
     }
 }
