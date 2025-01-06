@@ -7,4 +7,6 @@ public class StockTracker {
     public StockTracker(){
         this.stocks = new ArrayList<>();
     }
+
+    //Add a stock
 }
