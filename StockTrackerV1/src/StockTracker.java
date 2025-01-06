@@ -4,4 +4,7 @@ public class StockTracker {
     private ArrayList<Stock> stocks;
 
     //Constructors
+    public StockTracker(){
+        this.stocks = new ArrayList<>();
+    }
 }
