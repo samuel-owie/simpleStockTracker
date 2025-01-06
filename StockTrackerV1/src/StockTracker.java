@@ -9,4 +9,9 @@ public class StockTracker {
     }
 
     //Add a stock
+    public void addStock(Stock stock){
+        stocks.add(stock);
+    }
+
+    //Remove a stock by symbol
 }
