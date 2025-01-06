@@ -17,5 +17,10 @@ public class Main {
         tracker.updateStockPrice("AAPL", 155.00);
         System.out.println("\nAfter updating AAPL price: ");
         tracker.displayStocks();
+
+        //Remove a stock
+        tracker.removeStock("TSLA");
+        System.out.println("\nAfter removing TSLA:");
+        tracker.displayStocks();
     }
 }
