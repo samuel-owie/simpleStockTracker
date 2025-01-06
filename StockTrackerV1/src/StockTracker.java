@@ -26,5 +26,17 @@ public class StockTracker {
                 return;
             }
         }
+        System.out.println("Stock with symbol " + symbol + " not found.");
+    }
+
+    //Display all stocks
+    public void displayStocks(){
+        if(stocks.isEmpty()){
+            System.out.println("No stocks in the tracker.");
+        } else {
+            for(Stock stock : stocks){
+                System.out.println(stock);
+            }
+        }
     }
 }
