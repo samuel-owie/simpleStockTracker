@@ -35,7 +35,7 @@ public class StockTracker {
             System.out.println("No stocks in the tracker.");
         } else {
             for(Stock stock : stocks){
-                System.out.println(stock);
+                System.out.println(stock.toString()); //Explicit toString call, although it is implicitly called with a simple println(stock) call
             }
         }
     }
